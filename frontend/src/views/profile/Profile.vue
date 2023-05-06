@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="main-body">
-        <h3 class="text-center text-white py-2">My Account</h3>
+        <h3 class="text-center text-white py-2">Tài khoản</h3>
           <div class="row gutters-sm">
             <div class="col-md-4 mb-3">
               <div class="card">
@@ -20,13 +20,13 @@
                   <router-link to="/profile">
                     <li class="list-group-item py-3">
                     <i class="fa-solid fa-user me-3"></i>
-                    <span class="">My Profile</span>
+                    <span class="">Thông tin của tôi</span>
                   </li>
                   </router-link>
                   <router-link to="/comment">
                     <li class="list-group-item py-3">
                         <i class="fa-solid fa-comments me-3"></i>
-                        <span class="">My comment</span>
+                        <span class="">Bình luận của tôi</span>
                     </li>
                   </router-link>
                 </ul>

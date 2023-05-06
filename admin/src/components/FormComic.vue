@@ -181,13 +181,13 @@
             const comicFormSchema = yup.object().shape({
                 name: yup
                     .string()
-                    .required("Name must be valid"),
+                    .required("Tên phải hợp lệ!"),
                 actor: yup
                     .string()
-                    .required("Actor must be valid"),
+                    .required("Tác giả phải hợp lệ!"),
                 description: yup
                     .string()
-                    .required("Description must be valid"),
+                    .required("Mô tả phải hợp lệ!"),
                 
                
                 
@@ -251,7 +251,7 @@
             },
             async remove(index,id) {
                 if(id){
-                    if (confirm("Are you sure remove chapter ?")) {
+                    if (confirm("Bạn có chắc chắn xóa chương?")) {
                         try {
                             // console.log(id)
                             var remove = await comicService.deleteContent(id);

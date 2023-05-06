@@ -6,20 +6,20 @@
         <div class="row m-3 p-4">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <a href="#" class="logo justify-content-md-center">
-                    KLibrary
+                    <b class="text-danger">KLibrary</b>
               </a>
               <p>
-                  Giới thiệu và truyền đạt các thể loại sách đến mọi người!.
+                  Giới thiệu và truyền đạt các thể loại sách đến mọi người!
               </p>
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 link_web ">
               <ul>
-                  <h5>Trang</h5>
-                  <li>Trang chủ</li>
-                  <li>Lịch trình</li>
-                  <li>Thể loại</li>
-                  <li>Thịnh hành</li>
-                  <h5>Đánh giá</h5>
+                  <b class="text-success fs-5">TRANG</b>
+                  <div><i class="fas fa-chevron-right text-danger"></i>Trang chủ</div>
+                  <div><i class="fas fa-chevron-right text-danger"></i>Lịch trình</div>
+                  <div><i class="fas fa-chevron-right text-danger"></i>Thể loại</div>
+                  <div><i class="fas fa-chevron-right text-danger"></i>Thịnh hành</div>
+                  <div><i class="fas fa-chevron-right text-danger"></i> Đánh giá</div>
                   <li class="widget">
                       <!-- Đánh giá -->
                       <div class="rating">
@@ -35,38 +35,22 @@
                           <label for="rate-1"><i class="fa-solid fa-star"></i></label>
                       </div>
                   </li>
-              </ul>
-              <h5>Mạng xã hội</h5>
-                  <ul class="row p-0">
-                      <li class="col-3"><a href="#">
-                          <i class="fa-brands fa-facebook-f" style="font-size: 25px; color: #fff;"></i>
-                      </a></li>
-                      <li class="col-3"><a href="#">
-                          <i class="fa-brands fa-instagram" style="font-size: 25px; color: #fff;"></i>
-                      </a></li>
-                      <li class="col-3"><a href="#">
-                          <i class="fa-brands fa-twitter" style="font-size: 25px; color: #fff;"></i>
-                      </a></li>
-                  </ul>
+                </ul>
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <div>
-                  <h5>Tin nhắn</h5>
-                  <form class="py-1">
-                      <div class="mb-3">
-                          <label style="color: #fff;" for="exampleFormControlInput1" class="form-label">Name:</label>
-                          <input type="text" class="form-control" style="width: fit-content;" id="exampleFormControlInput1">
-                      </div>
-                      <div class="mb-3">
-                          <label style="color: #fff;" for="exampleFormControlInput2" class="form-label">Email:</label>
-                          <input type="email" class="form-control" style="width: fit-content;" id="exampleFormControlInput2" placeholder="name@example.com">
-                      </div>
-                      <div class="mb-3">
-                          <label style="color: #fff;" for="exampleFormControlTextarea1" class="form-label">Message:</label>
-                          <textarea class="form-control" style="width: fit-content;" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <button type="submit" class="btn" style="background-color: #e74c3c; width: fit-content;">Gửi</button>
-                  </form>
+                <b class="text-success fs-5">MẠNG XÃ HỘI</b>
+                  <ul class="row p-0">
+                      <li class="col-3"><a href="#">
+                          <i class="fa-brands fa-facebook-f" style="font-size: 25px; color: #106ce4;"></i>
+                      </a></li>
+                      <li class="col-3"><a href="#">
+                          <i class="fa-brands fa-instagram" style="font-size: 25px; color: #106ce4;"></i>
+                      </a></li>
+                      <li class="col-3"><a href="#">
+                          <i class="fa-brands fa-twitter" style="font-size: 25px; color: #106ce4;"></i>
+                      </a></li>
+                    </ul>
                   
               </div>
           </div>

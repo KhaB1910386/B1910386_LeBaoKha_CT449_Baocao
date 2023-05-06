@@ -57,7 +57,8 @@
                             <div>
                                 <img :src="'http://localhost:3000/assets/pdf/'+comic.photo" />
                                 <p class="name_item">{{ comic.name }}</p>
-                                <GenreName :id="comic._idGenre" />
+                                <!-- <p><GenreName :id="comic._idGenre" /></p> -->
+
                             </div>
 
                         </swiper-slide>
@@ -65,7 +66,7 @@
                     </swiper>
             </div>
             <div class="mt-5">
-                <h3 class="text-white">Bình luận</h3>
+                <h3 class="text-warning">Bình luận</h3>
                 <div class="text-white">Hãy cho chúng tôi biết bạn muốn gì nào!</div>
                 <CommentFormVue :comment="comment" @submit:comment="addComment"/>
                 <CommentView :nameComic="comic.name" />
@@ -161,7 +162,7 @@ export default {
                         toast.error(add.message);
                     }
                 }else{
-                    toast.error("Please login or register!")
+                    toast.error("Vui lòng đăng nhập!")
                 }
                 // var register = await UserService.register(data);
                 
@@ -200,7 +201,7 @@ export default {
 
 .swiper-slide {
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     width: 270px;
     height: 410px;
 }

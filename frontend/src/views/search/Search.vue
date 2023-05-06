@@ -2,9 +2,9 @@
     <div class="container row" style="padding-top:30px;">
             <div class="col-10">
                 <div>
-                    <h3 style="color:#e74c3c;">Result <span style="color:#cccccc;">({{ this.findComics.length }})</span></h3>
+                    <h3 style="color:#e74c3c;">Kết quả <span style="color:#cccccc;">({{ this.findComics.length }})</span></h3>
                     <div v-if="findComics.length > 0" class="row">
-                        <h5 class="text-white my-2">Result with " {{ this.search }} "</h5>
+                        <h5 class="text-white my-2">Kết quả với " {{ this.search }} "</h5>
                         <div class="col-3 mb-4" v-for="comic in findComics" :key="comic._id">
                                 <router-link class="item_info" :to="{
                                         name: 'comic.detail',
@@ -17,12 +17,12 @@
                         </div>
                     </div>
                     <h5 class="text-white" v-else >
-                        No result with " {{ this.search }} "
+                        Không có kết quả với " {{ this.search }} "
                     </h5>
                 </div>
             </div>
             <ul class="col-2">
-                <li><h5 style="color:#e74c3c;">Recommend</h5></li>
+                <li><h5 style="color:#e74c3c;">Gợi ý</h5></li>
                 <li class="rounded my-3 p-1 li_search" 
                     v-for="comic in comics" 
                     :key="comic._id">

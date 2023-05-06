@@ -1,4 +1,4 @@
-<script>
+ <script>
     export default {
         props: {
             contact: { type: Object, required: true },

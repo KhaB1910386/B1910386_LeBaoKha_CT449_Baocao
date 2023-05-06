@@ -9,13 +9,13 @@
                   <div class="cart-item-product-info">
                       <h4 class="cart-item-product-title">{{ comment.comment }}</h4>
                       <div class="text-lg text-body font-weight-medium pb-1">{{ format_date(comment.createAt) }}</div>
-                      <span>Comic: <span class="text-success font-weight-medium">{{ comment.nameComic }}</span></span>
+                      <span>Sách: <span class="text-success font-weight-medium">{{ comment.nameComic }}</span></span>
                   </div>
               </div>
           </div>
       </div>
       <div v-else class="text-white">
-        No comments
+        Không có bình luận nào!
       </div>
     </div>
     

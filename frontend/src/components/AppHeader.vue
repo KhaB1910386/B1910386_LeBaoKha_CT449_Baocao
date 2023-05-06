@@ -107,7 +107,7 @@
                 <nav class="nav_menu">
                     <div class="d-flex border-bottom">
                         <div class="logo mt-2 ms-2">
-                            COMIC
+                            KLibrary
                         </div>
                         <label for="nav_menu_input" class="nav_menu_close">
                             <i class="fa-solid fa-xmark"></i>
@@ -116,10 +116,10 @@
                   
                     <div v-if="username == ''" class="m-2 text-end">
                         <button class="account me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Register
+                            Đăng ký
                         </button>
                         <button class="account" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                Login
+                                Đăng nhập
                         </button>
                     </div>
                     <div v-else class="m-2 text-end">
@@ -130,24 +130,24 @@
                             
                         </router-link>
                         <button class="account" type="button" @click="logout">
-                            Logout
+                            Đăng xuất
                         </button>
                     </div>
                     <ul class="nav_menu_list border border-1">
                         <li>
                             <router-link class="nav_menu_item border-bottom" to="/">
-                            Home
+                            Trang chủ
                             </router-link>
                         </li>
                        
                         <li>
                             <router-link class="nav_menu_item border-bottom" to="/genre">
-                                Genre
+                                Thể loại
                             </router-link>
                         </li>
                         <li>
                             <router-link class="nav_menu_item" to="/trending">
-                                New & Trendding
+                                Thịnh hành
                             </router-link>
                         </li>
                     </ul>
@@ -190,7 +190,7 @@ export default {
                 }else{
                     toast.error(register.message);
                 }
-                toast.success("You must be login!")
+                toast.success("Bạn phải đăng nhập !")
             } catch (error) {
                 toast.error(error);
             }

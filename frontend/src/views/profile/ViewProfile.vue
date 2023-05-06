@@ -1,15 +1,15 @@
 <template>
     <div class="card mb-3">
-        <h4 class="card-header py-3">My profile</h4>
+        <h4 class="card-header py-3">Tài khoản của tôi</h4>
         <div class="card-body">
             <form @submit="submitChange" class="row">
                 <div class="col-12 mb-3">
-                        <label class="form-label" for="account-fn">Username</label>
+                        <label class="form-label" for="account-fn">Tên tài khoản</label>
                         <input class="form-control" type="text" id="account-fn" v-model="user.name" required disabled>
                 </div>
                 
                 <div class="col-12 mb-3">
-                        <label class="form-label" for="account-email">E-mail Address</label>
+                        <label class="form-label" for="account-email">Địa chỉ email</label>
                         <input class="form-control" name="email" type="email" id="account-email" v-model="user.email" :disabled="isUpdate" required @blur="validateEmail">
                         <span class="text-danger" v-if="msg.email">{{msg.email}}</span>
                 </div>
@@ -17,10 +17,10 @@
                 <div class="col-12">
                     <hr class="mt-2 mb-3">
                     <div v-if="isUpdate" class="text-end">
-                        <button @click="ChangeEmail" class="btn" type="button" style="color:#ffffff; background-color: #e74c3c;">Update</button>
+                        <button @click="ChangeEmail" class="btn" type="button" style="color:#ffffff; background-color: #e74c3c;">Cập nhật</button>
                     </div>
                     <div v-else class="text-end">
-                        <button type="submit" class="btn" style="color:#ffffff; background-color: #e74c3c;">Save</button>
+                        <button type="submit" class="btn" style="color:#ffffff; background-color: #e74c3c;">Lưu</button>
                     </div>
                 </div>
             </form>
@@ -50,7 +50,7 @@ export default{
                 this.msg['email'] = '';
             } else {
                 
-                this.msg['email'] = 'Please enter a valid email address';
+                this.msg['email'] = 'Vui lòng nhập địa chỉ email hợp lệ!';
             }
         },
         async submitChange(event){
